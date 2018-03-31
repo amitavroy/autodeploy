@@ -82,7 +82,8 @@
                     Laravel is Easy and Fun as well.
                 </div>
 
-                <p>Now let me see how things are coming with small changes</p>
+                <p>Now let me see how things are coming with small changes.</p>
+                <p>Now, I have fixed it.</p>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
