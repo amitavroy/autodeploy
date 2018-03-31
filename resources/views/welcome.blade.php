@@ -82,8 +82,7 @@
                     Laravel
                 </div>
 
-                <p>Now let me see how things are coming with small changes.</p>
-                <p>Now, I have fixed it.</p>
+                <p>With this, I can just say that things are running as they should. I should not have problems.</p>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
