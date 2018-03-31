@@ -79,8 +79,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel is Easy and Fun as well
+                    Laravel is Easy and Fun as well.
                 </div>
+
+                <p>Now let me see how things are coming.</p>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
