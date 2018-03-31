@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel is Easy and Fun as well.
+                    Laravel
                 </div>
 
                 <p>Now let me see how things are coming with small changes.</p>
