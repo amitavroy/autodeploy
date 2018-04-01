@@ -81,17 +81,6 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-
-                <p>With this, I can just say that things are running as they should. I should not have problems.</p>
-                <p>And then we need to confirm the deploy script</p>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
             </div>
         </div>
     </body>
