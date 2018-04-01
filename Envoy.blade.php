@@ -3,11 +3,6 @@ $repo = 'git@github.com:amitavroy/autodeploy.git';
 $release_dir = '/home/fwdev/autodeploy/releases';
 $repo_dir = '/home/fwdev/autodeploy';
 $release = 'release_' . date('YmdHis');
-
-function logMessage($message) {
-  return "echo '\033[32m" .$message. "\033[0m';\n";
-}
-
 @endsetup
 
 @servers(['web' => ['fwdev@192.168.7.162']])
@@ -29,18 +24,15 @@ function logMessage($message) {
     [ -d {{ $release_dir }} ] || mkdir {{ $release_dir }};
     cd {{$release_dir}};
     git clone {{ $repo }} {{$release}};
-    
 @endtask
 
 @task('make_app_ready')
     cd {{ $release_dir }}/{{ $release }};
     composer install --prefer-dist;
-    logMessage('composer install done');
     cp .env.example .env
     php artisan key:generate
     sudo chgrp -R www-data bootstrap/cache
     sudo chmod -R ug+rwx bootstrap/cache
-    logMessage('folder permissions done');
 @endtask
 
 @task('setup_storage_and_env')
@@ -67,7 +59,6 @@ function logMessage($message) {
 @task('setup_composer')
     cd {{ $release_dir }}/{{ $release }};
     composer install --prefer-dist;
-    logMessage('composer install done');
 @endtask
 
 @task('setup_folders')
