@@ -83,6 +83,7 @@
                 </div>
 
                 <p>With this, I can just say that things are running as they should. I should not have problems.</p>
+                <p>And then we need to confirm the deploy script</p>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
