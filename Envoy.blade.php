@@ -66,6 +66,10 @@ $release = 'release_' . date('YmdHis');
     sudo chgrp -R www-data bootstrap/cache
     sudo chmod -R ug+rwx bootstrap/cache
     rm -rf storage
+    php artisan cache:clear
+    php artisan route:clear
+    php artisan route:clear
+    php artisan view:clear
 
     cd {{ $release_dir }}/{{ $release }}
     ln -nfs {{ $repo_dir }}/storage storage
