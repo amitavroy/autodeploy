@@ -63,13 +63,15 @@ $release = 'release_' . date('YmdHis');
 
 @task('setup_folders')
     cd {{ $release_dir }}/{{ $release }}
-    sudo chgrp -R www-data bootstrap/cache
-    sudo chmod -R ug+rwx bootstrap/cache
-    rm -rf storage
+    
     php artisan cache:clear
     php artisan route:clear
     php artisan route:clear
     php artisan view:clear
+
+    sudo chgrp -R www-data bootstrap/cache
+    sudo chmod -R ug+rwx bootstrap/cache
+    rm -rf storage
 
     cd {{ $release_dir }}/{{ $release }}
     ln -nfs {{ $repo_dir }}/storage storage

@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel WIP Kaustubh Test
+                    Laravel WIP Kaustubh Test2
                 </div>
             </div>
         </div>
